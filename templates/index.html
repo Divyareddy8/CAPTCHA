@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAPTCHA Verification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>CAPTCHA Verification</h1>
+    <form method="POST" action="/">
+        <p>Please enter the text shown below:</p>
+        <img src="{{ url_for('captcha_image') }}" alt="CAPTCHA" class="captcha-image">
+        <input type="text" name="captcha_input" required>
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>
