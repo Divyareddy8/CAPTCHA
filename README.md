@@ -24,3 +24,9 @@ To run this project, you'll need:
    ```bash
    git clone https://github.com/YourUsername/Captcha-Verification-Project.git
    cd Captcha-Verification-Project
+2. **Install Required Dependencies**: 
+Install Flask and Pillow via pip
+
+3. Run the Application:
+python app.py
+
